@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-pages">
+      <h1> sneakers </h1>
+      <p class="header-page"> Collections </p>
+      <p class="header-page"> Men </p>
+      <p class="header-page">Women</p>
+      <p class="header-page">About</p>
+      <p class="header-page">Contact</p>
+    </div>
+    <div class="header-cart-profile">
+      <div class="cart-icon-container">
+        <p class="cart-icon-quant">0</p>
+        <img src="./images/icon-cart.svg" alt="cart icon" class="cart-icon">
+        <div class="cart-display">
+          <div class="cart-label">
+            <h3> Cart </h3>
+          </div>
+          <p> Your cart is empty </p>
+        </div>
+      </div>
+      
+      <img src="./images/image-avatar.png" class="profile-pic">
+    </div>
+  </header>
+  <div class="product">
+    <div class="product-images">
+      <img class="thumbnail product-big-img" src="./images/image-product-1.jpg" alt="orange tennis shoe">
+      <div class="product-thumbnails">
+        <img src="./images/image-product-1-thumbnail.jpg" data-full="./images/image-product-1.jpg" alt="Product 1 Thumbnail" class="thumbnail">
+          <img src="./images/image-product-2-thumbnail.jpg" data-full="./images/image-product-2.jpg" alt="Product 2 Thumbnail" class="thumbnail">
+          <img src="./images/image-product-3-thumbnail.jpg" data-full="./images/image-product-3.jpg" alt="Product 3 Thumbnail" class="thumbnail">
+          <img src="./images/image-product-4-thumbnail.jpg" data-full="./images/image-product-4.jpg" alt="Product 4 Thumbnail" class="thumbnail">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="product-info-header">
+        <p>SNEAKER COMPANY</p>
+        <H1> Fall Limited Edition Sneakers</H1>
+      </div>
+      <div class="product-info-description">
+        <p> These low profile sneakers are your perfect casual wear companion. 
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price">
+          <h2> $125.00 </h2>
+          <div class="price-discount">
+            50%
+          </div>
+        </div>
+        <p class="original-price"> $250.00 </p>
+
+      </div>
+      <div class="product-info-checkout">
+        <div class="add-sub-btn">
+          <button class="add-quant-btn"> + </button>
+          <div class="quantity"> 0 </div>
+          <button class="sub-quant-btn"> - </button>
+          
+        </div>  
+        <button class="add-to-cart-btn"> 
+          <img src="./images/icon-cart.svg" alt="cart icon">
+          <p> Add to Cart </p>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <!-- Close button -->
+    <span class="close">&times;</span>
+    <div class="lightbox-nav left">&lt;</div>
+    <img class="lightbox-content" id="lightboxImage" src="./images/image-product-1.jpg" alt="Big Product Image">
+
+    <div class="lightbox-nav right">&gt;</div> 
+    <div class="lightbox-thumbnails">
+        <img src="./images/image-product-1-thumbnail.jpg" data-full="./images/image-product-1.jpg" alt="Product 1 Thumbnail" class="thumbnail">
+        <img src="./images/image-product-2-thumbnail.jpg" data-full="./images/image-product-2.jpg" alt="Product 2 Thumbnail" class="thumbnail">
+        <img src="./images/image-product-3-thumbnail.jpg" data-full="./images/image-product-3.jpg" alt="Product 3 Thumbnail" class="thumbnail">
+        <img src="./images/image-product-4-thumbnail.jpg" data-full="./images/image-product-4.jpg" alt="Product 4 Thumbnail" class="thumbnail">
+    </div>
+</div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
